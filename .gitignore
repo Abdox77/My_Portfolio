@@ -1,5 +1,11 @@
 .DS_Store
 .vscode
-.node_modules
-
+Design/*
+node_modules
+.env.local
+public/*
+out/
+coverage/
+*.log
+.next
 

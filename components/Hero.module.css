@@ -1,0 +1,107 @@
+.hero {
+  min-height: calc(100vh - 6.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: slideUp 0.8s ease-out;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 3.75rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.cta a {
+  min-width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100vh - 9rem);
+    padding: 4rem 1.5rem;
+  }
+
+  .title {
+    font-size: clamp(2.4rem, 8vw, 2.8rem);
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta a {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: calc(100vh - 7.5rem);
+  }
+
+  .title {
+    font-size: clamp(3.4rem, 5.5vw, 4rem);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title {
+    font-size: clamp(4rem, 4.5vw, 4.5rem);
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

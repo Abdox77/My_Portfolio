@@ -1,0 +1,47 @@
+.ball {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: 2px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.12);
+  cursor: pointer;
+  z-index: 2000;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.ball:active {
+  transform: scale(0.95);
+}
+
+.ball:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.12);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .ball {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+}
