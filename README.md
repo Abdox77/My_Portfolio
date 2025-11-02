@@ -6,9 +6,7 @@ Responsive personal portfolio built with **Next.js 14**, **React 18**, **TypeScr
 ## Preview
 
 
-```markdown
-![Portfolio preview](public/portfolio_cap.png)
-```
+![Preview](./public/portfolio.png)
 
 ## Features
 
