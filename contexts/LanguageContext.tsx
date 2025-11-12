@@ -194,6 +194,7 @@ const translations: Record<Language, Translations> = {
             description: 'A custom HTTP web server built from scratch in C++ supporting CGI, multiple clients, and configuration parsing.',
             tags: ['C++', 'HTTP', 'CGI', 'Networking'],
             image: 'webserv.png',
+            link: 'https://github.com/Abdox77/Webserv'
         },
         {
             title: 'ft_transcendence',
@@ -369,6 +370,7 @@ const translations: Record<Language, Translations> = {
             description: "Serveur HTTP personnalisé développé entièrement en C++, prenant en charge le CGI, la gestion de multiples clients et l’analyse de fichiers de configuration.",
             tags: ['C++', 'HTTP', 'CGI', 'Réseaux'],
             image: 'webserv.png',
+            link: 'https://github.com/Abdox77/Webserv'
         },
 
         {
