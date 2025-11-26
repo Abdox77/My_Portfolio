@@ -113,9 +113,9 @@ const translations: Record<Language, Translations> = {
           period: 'April 2025 - Jul 2025',
           link: 'https://www.ocpgroup.ma/en' as string,
           bullets: [
-            'Développement d\'un tableau de bord de maintenance prédictive (React, Flask, SQLite) pour le suivi en temps réel d\'équipements industriels.',
-            'Contribution à l\'implémentation d\'un modèle LSTM-P pour l\'estimation du RUL (Remaining Useful Life), intégré dans un pipeline complet de données.',
-            'Collaboration avec les équipes d\'ingénierie pour la validation des modèles et l\'optimisation des performances',
+            'Developed a predictive maintenance dashboard (React, Flask, SQLite) for real-time monitoring of industrial equipment.',
+           'Contributed to the implementation of an LSTM-P model for RUL (Remaining Useful Life) estimation, integrated into a complete data pipeline.',
+           'Collaborated with engineering teams for model validation and performance optimization.',
           ],
         },
       ],
@@ -127,9 +127,9 @@ const translations: Record<Language, Translations> = {
           period: '2025 - 2026',
           link: 'https://www.insset.u-picardie.fr' as string,
           bullets: [
-           'Developed a predictive maintenance dashboard (React, Flask, SQLite) for real-time monitoring of industrial equipment.',
-           'Contributed to the implementation of an LSTM-P model for RUL (Remaining Useful Life) estimation, integrated into a complete data pipeline.',
-           'Collaborated with engineering teams for model validation and performance optimization.',
+            'Specialization in software engineering, cloud computing, and digital transformation.',
+            'Completion of academic projects in full-stack development, IoT, and systems design.',
+            'Currently in the final year with a specialization in software architecture.',
            ],
         },
         {
@@ -467,10 +467,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setLanguage,
     t: translations[language],
   };
-
-  if (!mounted) {
-    return <>{children}</>;
-  }
 
   return (
     <LanguageContext.Provider value={value}>
